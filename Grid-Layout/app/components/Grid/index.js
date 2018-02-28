@@ -25,7 +25,7 @@ export default class Grid extends React.PureComponent {
       <div>
         <div className="grid">
           {this.state.images.map((image, index) => (
-          <div className="gridItem" key={index}>
+          <div className="gridItem" key={'gridItem${index}'}>
             <img src={require('../../images/'+image)} className="gridImage" />
           </div>
           ))}
