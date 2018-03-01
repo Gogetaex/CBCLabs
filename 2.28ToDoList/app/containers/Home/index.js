@@ -25,19 +25,19 @@ export default class Home extends React.PureComponent {
     })
   }
 
-storeItem = () => {
-  var listItems = this.state.listItems;
-  var inputItem = this.state.inputItem;
+  storeItem = () => {
+    var listItems = this.state.listItems;
+    var inputItem = this.state.inputItem;
 
-  if(inputItem !== "") {
-    listItems.push(inputItem);
+    if(inputItem !== "") {
+      listItems.push(inputItem);
 
-    this.setState({
-      listItems:listItems,
-      inputItem:""
-    })
+      this.setState({
+        listItems:listItems,
+        inputItem:""
+      })
+    }
   }
-}
 
   render() {
     return (
